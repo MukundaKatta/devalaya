@@ -1,0 +1,21 @@
+{
+  "name": "@devalaya/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./types": "./types/index.ts",
+    "./types/*": "./types/*.ts",
+    "./i18n": "./i18n/index.ts",
+    "./utils": "./utils/index.ts"
+  },
+  "dependencies": {
+    "i18next": "^24.2.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
