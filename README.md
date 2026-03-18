@@ -1,38 +1,41 @@
-# Devalaya
+# devalaya
 
-> The Digital Heart of Your Temple
+**The digital heart of your temple**
 
-## Overview
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-Devalaya (Sanskrit: देवालय, meaning "abode of God") is a comprehensive digital platform for Hindu temples. It connects devotees with their temple community through event management, online donations, priest scheduling, and live darshan streaming.
-
-## Key Features
-
-- **Event Calendar** — Temple festivals, pujas, and community events
-- **Online Donations** — Secure donation processing with tax receipts
-- **Priest Scheduling** — Book priests for home ceremonies and special pujas
-- **Live Darshan** — Stream daily aarti and special events
-- **Devotee Directory** — Community member profiles and engagement
-- **Volunteer Management** — Coordinate temple service activities
-- **Multi-Temple Support** — Manage multiple temple locations
-
-## Tech Stack
-
-- **Frontend:** React, Tailwind CSS
-- **Backend:** Firebase (Firestore, Auth, Functions)
-- **Payments:** Stripe
-- **Streaming:** WebRTC
-- **Deployment:** Firebase Hosting
-
-## Getting Started
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/devalaya.git
-cd devalaya
 npm install
-npm run dev
 ```
 
----
+## Quick Start
+```typescript
+import { Devalaya } from "./devalaya";
+const instance = new Devalaya()
+const r = await instance.process({ input: 'test' })
+```
 
-**Mukunda Katta** · [Officethree Technologies](https://github.com/MukundaKatta/Office3) · 2026
+## CLI
+```bash
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
+```
+
+## API
+| Method | Description |
+|--------|-------------|
+| `process()` | Process |
+| `analyze()` | Analyze |
+| `transform()` | Transform |
+| `validate()` | Validate |
+| `export()` | Export |
+| `get_stats()` | Get stats |
+
+## Test
+```bash
+npx vitest
+```
+
+## License
+(c) 2026 Officethree Technologies. All Rights Reserved.
